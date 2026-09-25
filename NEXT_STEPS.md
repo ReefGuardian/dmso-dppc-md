@@ -1,32 +1,28 @@
 # Next steps
 
-Updated: 2026-09-25  
-Current stage: private repository established; training preparation pending  
+Milestone date: 2026-09-24 (America/New_York)  
+Current stage: small practice construction and visualization completed (user-reported)  
 Current repository URL: https://github.com/ReefGuardian/dmso-dppc-md (verified PRIVATE)  
 Last verified research run: none documented  
-Immediate task: verify GROMACS and builder availability on the intended training Mac.
+Immediate experimental task: user to obtain and verify Martini force-field files, prepare the topology, and prepare energy minimization inputs.
 Local folder: `/Users/mila/Downloads/dmso-dppc-md`  
 Local branch: `main` (tracking `origin/main`)
 
-## Setup stopping point
+## Current stopping point
 
-Private repository creation and initial push succeeded. Initial commit `dab237e5930ec1c7fa7dc4bdec9d63190c5e299a` was verified on remote `main`. GitHub owner is the authenticated personal account `ReefGuardian`. No access issue remains. All scientific settings, stars, explanations, sources, and open decisions are preserved. No simulations were run.
+See [TRAIN-001 notebook](practice-runs/TRAIN-001/README.md) for the September 24, 2026 milestone. The user reports completing construction of a 50-DPPC system and visualization in PyMOL. Copies of `dppc_start.pdb`, `topol.top`, and `dppc_start_view.pse` are archived there. No energy minimization, equilibration, or molecular dynamics performed. Simulation force-field files are not yet prepared in the practice folder; `topol.top` is preliminary builder output.
 
-Next single step (not executed): check `gmx --version` and installed builder availability on the intended training Mac, recording executable paths and versions. These checks establish the current tools for the approximately 50-DPPC, DMSO-free training system selected in P05/R1. Expected output is a software inventory, not a membrane or simulation.
+## Next experimental work — user executes
 
-## After GitHub setup
+The user will obtain and verify the Martini force-field files, prepare the topology, and prepare energy minimization inputs. This supplies the simulation definitions missing from the builder output. Expected outputs are identified force-field files, a prepared topology, and minimization input files. No such work is executed by this documentation task.
 
-- Verify the actual execution machine and gmx --version before doing simulation work.
-- Inspect installed builder tools and choose how to create the 50-lipid training system.
-- Resolve the candidate pressure-control combination for the chosen GROMACS version.
-- Prepare and explain one concrete training step with input sources and expected output.
-- Record and execute only the authorized step.
+The assistant performs documentation and GitHub recordkeeping only, as specified in AGENTS.md. Record the user's subsequent commands, source/version details, and results when provided. PyMOL's exact version remains unrecorded. Keep the small practice build separate from the larger 512-lipid research plan. Resolve the pressure-control compatibility issue before later run-ready equilibration/production preparation.
 
 ## Research decisions still open
 
 - Control water count and hydration policy across mixtures.
 - Integer water/DMSO counts and resulting actual mol%.
-- Box dimensions and leaflet matching procedure.
+- Research-system box dimensions and leaflet matching procedure (practice build choices are recorded separately).
 - Minimization, equilibration, and production settings.
 - Training duration and analysis/output intervals.
 - Independent-repeat count, seeds, and uncertainty method.

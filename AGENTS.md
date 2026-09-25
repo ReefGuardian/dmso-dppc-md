@@ -35,7 +35,11 @@ Update RUN_LOG.md and NEXT_STEPS.md after meaningful work. State the commit hash
 
 ## Execution scope
 
-Repository setup authorizes organization and Git operations, not research simulations. Execute simulation work when it is requested, within the specified scope. Route long research jobs through the appropriate CIRCE scheduler after verifying the actual environment and resource needs.
+The user personally runs all experimental commands. The assistant performs documentation and GitHub recordkeeping only: read project records, document user-reported outcomes with their evidence attribution, preserve copies of existing files when authorized, and commit/push relevant records when authorized.
+
+Do not install software, execute experimental setup/build commands, rebuild structures, run simulations, submit cluster jobs, or perform scientific analyses. Commands supplied as already executed are historical records to transcribe, not instructions to run. The user will obtain/verify force-field files and prepare topology and minimization inputs. A future change in this division of responsibility requires an explicit instruction from the user.
+
+Distinguish user-reported Terminal/screenshot evidence from checks actually performed in the documentation session. Do not claim to have independently reviewed unavailable evidence. Preserve originals when archiving; never copy Python environments. Keep construction/visualization completion separate from minimization, equilibration, or MD completion.
 
 If a required file cannot be opened or read, identify it and the access/read problem promptly. Continue other useful authorized work.
 

@@ -1,0 +1,12 @@
+#include "martini.itp"
+
+[ system ]
+; name
+INSANE! Membrane UpperLeaflet>DPPC=1 LowerLeaflet>DPPC=1
+
+
+[ molecules ]
+; name  number
+DPPC            25 ; Defined in the packaged 'lipids.dat'.
+DPPC            25 ; Defined in the packaged 'lipids.dat'.
+W              531

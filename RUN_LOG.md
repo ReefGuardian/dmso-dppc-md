@@ -8,7 +8,7 @@ No completed simulation has been established from the records reviewed for this 
 
 | Run ID | Purpose | Actual state | Record |
 | --- | --- | --- | --- |
-| TRAIN-001 | Approximately 50-DPPC, DMSO-free training system | Planned; inputs, builder, box, and duration not yet finalized | No run record yet |
+| TRAIN-001 | Small 50-DPPC, DMSO-free practice system | Construction and visualization completed (user-reported); no minimization, equilibration, or MD | [Practice notebook and archive](practice-runs/TRAIN-001/README.md) |
 
 Reserve research IDs such as SA-D000-R01 and IN-D006-R01 only when preparing actual runs. SA = self-assembly, IN = INSANE; D000/D006/D012 indicate target DMSO mol%; R01 identifies a repeat. Record actual composition separately.
 
@@ -78,3 +78,16 @@ When making a parameter choice, state the old and new values, source, reason, da
 - This follow-up updates README.md, RUN_LOG.md, and NEXT_STEPS.md to record the verified setup. Its commit/push outcome will be verified separately after execution; the initial push above is already verified.
 - Unresolved access issues: none after successful authentication and push. All scientific open decisions remain unresolved as written.
 - Next single practical step (proposed, not executed): verify `gmx --version` and installed builder tools on the intended training Mac. This checks the current tools before preparing TRAIN-001; the approximately 50-DPPC, DMSO-free scope comes from P05/R1. Expected output is a recorded executable path/version and builder availability, not simulation results. Resolve pressure-control compatibility and other open inputs before preparing an executable protocol.
+
+## 2026-09-24 — Small DPPC practice system: construction and visualization.
+
+- Date: September 24, 2026, America/New_York (EDT); exact experimental times not recorded.
+- [Full notebook entry, parameter table, historical commands, software versions, observations, warnings, visualization, and archive manifest](practice-runs/TRAIN-001/README.md).
+- Evidence: user-reported results, supported according to the user by Terminal output and screenshots reviewed in the chat. This documentation session did not independently review those earlier screenshots or execute experimental commands.
+- User reports INSANE construction and PyMOL visualization completed: 25 DPPC per leaflet, 600 membrane beads, 531 solvent beads, 1,131 total beads, reported charge 0. These are observed outputs, separate from chosen inputs.
+- Working practice choices and their sources/reasons are starred in the notebook. Previously unresolved practice builder/box/packing are now recorded as used by the user. Only TRAIN-001 is affected; the separate 512-lipid plan and unresolved production settings are unchanged.
+- Existing `dppc_start.pdb`, `topol.top`, and `dppc_start_view.pse` were copied from `/Users/mila/Desktop/DPPC-small-test/` into `practice-runs/TRAIN-001/`. Exact copy equality and SHA-256 were checked for archival integrity only. Originals were not modified, and the Python environment was not copied.
+- AGENTS.md now preserves the division of responsibility: the user executes experimental work; the assistant documents, archives, and maintains GitHub records.
+- No energy minimization, equilibration, or molecular dynamics performed. Simulation force-field files are not yet prepared in the practice folder; topol.top remains preliminary builder output.
+- Next experimental work, to be executed by the user: obtain and verify Martini force-field files, prepare the topology, and prepare energy minimization inputs.
+- Documentation commit and push are authorized; their actual outcome will be reported after execution.
