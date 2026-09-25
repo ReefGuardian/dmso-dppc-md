@@ -27,9 +27,9 @@ A star (*) means that Tony and the assistant have selected a working project cho
 
 ## GitHub setup
 
-Suggested private repository name: dmso-dppc-md.
+Private repository: https://github.com/ReefGuardian/dmso-dppc-md (visibility verified PRIVATE during setup).
 
-Extract the starter ZIP, open this folder in a local Codex session, and use Prompt 1 in CODEX_PROMPTS.md. No GitHub repository or commit has been created by preparing this package. Authentication and the actual push will be performed in the user's Codex environment.
+Local working folder: `/Users/mila/Downloads/dmso-dppc-md`; branch `main` tracks `origin/main`. Initial commit `dab237e5930ec1c7fa7dc4bdec9d63190c5e299a` was pushed successfully. See RUN_LOG.md for setup evidence and NEXT_STEPS.md for the stopping point.
 
 The GitHub repository becomes the working record after the initial upload. Update the files there; the downloaded starter and standalone previews are initial snapshots.
 

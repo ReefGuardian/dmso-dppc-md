@@ -63,3 +63,18 @@ When making a parameter choice, state the old and new values, source, reason, da
 - Scientific parameters, source citations, asterisks, explanations, unresolved decisions, and historical reference snapshots remain unchanged. Existing ignore rules exclude large simulation outputs and credentials.
 - Current outcome: local Git initialized; initial commit and remote creation/push pending. No GitHub URL or successful push is claimed at this point.
 - Next action: complete GitHub sign-in, verify the authenticated personal owner and whether `dmso-dppc-md` exists, then commit and push without overwriting existing work.
+
+## 2026-09-24 21:08:53 EDT — Prompt 1: private repository created and initial push verified
+
+- Execution machine: local macOS (Darwin arm64), `/Users/mila/Downloads/dmso-dppc-md`; no CIRCE access or simulation execution. Scope remains organization only.
+- Initial commit: `dab237e5930ec1c7fa7dc4bdec9d63190c5e299a` (`Initialize DMSO-DPPC project notebook and source references`), containing 18 inspected small text files. Existing Git identity retained.
+- Earlier browser authorization completed but saving CLI configuration failed with `mkdir /Users/mila/.config/gh: permission denied`; the parent directory was owned by root. A subsequent notebook-update permission request was declined, so that update was not made. The user subsequently reported sign-in complete.
+- The sandboxed `gh auth status` reported an invalid token. Repeating authentication verification outside the sandbox succeeded with keyring authentication; `gh api user` confirmed personal account `ReefGuardian` (type `User`). No new sign-in was required.
+- `gh repo view ReefGuardian/dmso-dppc-md` initially reported that the repository could not be resolved. No local remote or unrelated work existed.
+- `gh repo create ReefGuardian/dmso-dppc-md --private --source . --remote origin --push` succeeded. Actual URL: https://github.com/ReefGuardian/dmso-dppc-md . Remote: `https://github.com/ReefGuardian/dmso-dppc-md.git`.
+- Git output confirmed `[new branch] HEAD -> main` and tracking of `origin/main`. `gh repo view` confirmed owner/name `ReefGuardian/dmso-dppc-md`, visibility `PRIVATE`, and default branch `main`.
+- `git ls-remote origin refs/heads/main` returned `dab237e5930ec1c7fa7dc4bdec9d63190c5e299a`, matching local HEAD. Initial push succeeded.
+- Original preservation checks found only RUN_LOG.md and NEXT_STEPS.md changed; all scientific records and four source snapshots were byte-for-byte preserved. `git diff --cached --check` reported original whitespace and Markdown line endings, retained to preserve sources. No parameter decisions were changed.
+- This follow-up updates README.md, RUN_LOG.md, and NEXT_STEPS.md to record the verified setup. Its commit/push outcome will be verified separately after execution; the initial push above is already verified.
+- Unresolved access issues: none after successful authentication and push. All scientific open decisions remain unresolved as written.
+- Next single practical step (proposed, not executed): verify `gmx --version` and installed builder tools on the intended training Mac. This checks the current tools before preparing TRAIN-001; the approximately 50-DPPC, DMSO-free scope comes from P05/R1. Expected output is a recorded executable path/version and builder availability, not simulation results. Resolve pressure-control compatibility and other open inputs before preparing an executable protocol.

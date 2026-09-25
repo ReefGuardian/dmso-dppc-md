@@ -1,18 +1,18 @@
 # Next steps
 
 Updated: 2026-09-25  
-Current stage: organizational setup  
-Current repository URL: not created yet  
+Current stage: private repository established; training preparation pending  
+Current repository URL: https://github.com/ReefGuardian/dmso-dppc-md (verified PRIVATE)  
 Last verified research run: none documented  
-Immediate task: complete browser sign-in, verify the personal GitHub owner, and create/push the private repository.
+Immediate task: verify GROMACS and builder availability on the intended training Mac.
 Local folder: `/Users/mila/Downloads/dmso-dppc-md`  
-Local branch: `main` (initialized; initial commit pending)
+Local branch: `main` (tracking `origin/main`)
 
 ## Setup stopping point
 
-The local repository is initialized and GitHub CLI 2.101.0 is installed. GitHub browser authorization is pending. The existing configured commit identity is retained. All four source snapshots match their recorded checksums. No simulation work was performed.
+Private repository creation and initial push succeeded. Initial commit `dab237e5930ec1c7fa7dc4bdec9d63190c5e299a` was verified on remote `main`. GitHub owner is the authenticated personal account `ReefGuardian`. No access issue remains. All scientific settings, stars, explanations, sources, and open decisions are preserved. No simulations were run.
 
-Next: finish browser authorization, verify the authenticated personal account and any existing `dmso-dppc-md` repository, then commit the inspected small files and push to a verified private remote. Record actual commit and push outcomes after execution. Do not paste credentials into the notebook.
+Next single step (not executed): check `gmx --version` and installed builder availability on the intended training Mac, recording executable paths and versions. These checks establish the current tools for the approximately 50-DPPC, DMSO-free training system selected in P05/R1. Expected output is a software inventory, not a membrane or simulation.
 
 ## After GitHub setup
 
