@@ -1,0 +1,37 @@
+# Operating-system/editor output
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+__pycache__/
+*.py[cod]
+.venv/
+
+# Local credentials and environment secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Large simulation outputs: retain separately with documented backups
+*.xtc
+*.trr
+*.tng
+*.edr
+*.cpt
+*.tpr
+*.log
+*.part[0-9]*
+/data/
+/scratch/
+/tmp/
+
+# GROMACS automatic backup files
+\#*\#
+
+# Keep small source/input files, including .mdp, .top, .itp, .gro,
+# .pdb, scripts, and concise text evidence under version control.
+# Convert essential selected runtime metadata to a small .txt record,
+# or explicitly track a small log when justified after inspection.
+

@@ -1,0 +1,59 @@
+{
+  "record_date_utc": "2026-09-25",
+  "purpose": "Reference provenance; these are not active run inputs.",
+  "sources": {
+    "solvents": {
+      "url": "https://cgmartini-library.s3.ca-central-1.amazonaws.com/1_Downloads/ff_parameters/martini3/martini_v3.0.0_solvents_v1.itp",
+      "sha256": "e6a78414b317c38a1a816eded4aee6082a5da1ed229a126359f0cc92314dcb4e",
+      "bytes": 14432,
+      "status": "retrieved",
+      "snapshot_relative_path": "references/snapshots/solvents_snapshot.itp.txt"
+    },
+    "production_example": {
+      "url": "https://cgmartini-library.s3.ca-central-1.amazonaws.com/1_Downloads/example_input_files/mdps/martini_v3.0_prod.mdp",
+      "sha256": "1ce9d6a5a09ffa149be64fa01ab1002561234e3607696de11cd68d082a405b73",
+      "bytes": 6204,
+      "status": "retrieved",
+      "snapshot_relative_path": "references/snapshots/production_example.mdp.txt"
+    },
+    "lipid_pc_v2": {
+      "url": "https://raw.githubusercontent.com/Martini-Force-Field-Initiative/M3-Lipid-Parameters/refs/heads/main/ITPs/martini_v3.0.0_phospholipids_PC_v2.itp",
+      "sha256": "43fc3e9976ea2a11af1b3df5d841ed1d2677dddd93a73a7e86304ad875ffb150",
+      "bytes": 128980,
+      "status": "retrieved",
+      "snapshot_relative_path": "references/snapshots/lipids_pc_v2.itp.txt"
+    },
+    "lipid_bonded_v2": {
+      "url": "https://raw.githubusercontent.com/Martini-Force-Field-Initiative/M3-Lipid-Parameters/refs/heads/main/ITPs/martini_v3.0.0_ffbonded_v2.itp",
+      "sha256": "149f98c48e32a9aab95e205b36c10e68332349d831aec3980bc55b4b428ab3fb",
+      "bytes": 12166,
+      "status": "retrieved",
+      "snapshot_relative_path": "references/snapshots/lipid_bonded_v2.itp.txt"
+    },
+    "01-Permeability-Benchmarking-Guidelines-for-Comparing-in-Silico-in-Vitro-and-in-Vivo-Measurements.pdf": {
+      "sha256": "58696deb22f744a277bc057e99442c57d38c2015b25a1169e01217d5c2b7c8c8",
+      "bytes": 6726213,
+      "status": "supplied PDF"
+    },
+    "02-2006-paper.pdf": {
+      "sha256": "b15fe817674a3926cea6db2d8a12667ed917044b7f7cd7fb06e1ce7442534e70",
+      "bytes": 175799,
+      "status": "supplied PDF"
+    },
+    "03-2007-paper.pdf": {
+      "sha256": "1af33082d49ee3ecea1b945ebc25d3154cb53f12ad48d04bb43a7cedc062f9f3",
+      "bytes": 1223015,
+      "status": "supplied PDF"
+    },
+    "04-suplemental-info-from-2006-paper.pdf": {
+      "sha256": "9a4ed1f72b28d4a0e114ab25dc56db41ac5b3510782ec756813b3e45da44bc00",
+      "bytes": 197500,
+      "status": "supplied PDF"
+    },
+    "05-2004JPhysChemBMarrink.pdf": {
+      "sha256": "f9ad8276ce9640575867d4e8ee9a5175e783c6dd9ac61a2522bb85b3a991cddf",
+      "bytes": 1700019,
+      "status": "supplied PDF"
+    }
+  }
+}
